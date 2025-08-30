@@ -2,6 +2,7 @@ import discord
 from discord import app_commands
 import sqlite3
 import hashlib
+import os
 
 # Bot setup
 intents = discord.Intents.default()
