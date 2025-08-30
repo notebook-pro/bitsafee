@@ -172,4 +172,8 @@ async def storage_help(interaction: discord.Interaction):
     await interaction.response.send_message(help_text, ephemeral=True)
 
 
-client.run("MTM5MjAzMDY0MTA3OTQ1MTc0OQ.G6nqXm.uiTL6h5dpdYcURPyOO-T5_O8wDrzQe3Uz6IIx8")
+from dotenv import load_dotenv
+
+load_dotenv() # Load variables from a local .env file for testing
+TOKEN = os.getenv('DISCORD_TOKEN')
+bot.run(TOKEN)
