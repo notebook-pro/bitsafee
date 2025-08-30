@@ -177,4 +177,4 @@ from dotenv import load_dotenv
 
 load_dotenv() # Load variables from a local .env file for testing
 TOKEN = os.getenv('DISCORD_TOKEN')
-bot.run(TOKEN)
+client.run(TOKEN)
